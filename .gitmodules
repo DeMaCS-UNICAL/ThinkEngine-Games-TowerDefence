@@ -1,0 +1,3 @@
+[submodule "ThinkEngine"]
+	path = ThinkEngine
+	url = https://github.com/DeMaCS-UNICAL/ThinkEngine.git
