@@ -1,8 +1,8 @@
 # ThinkEngine-Games-YOURGAME
 
 To clone the repository:
-1. git clone <repo-url>
-2. cd <repo folder>
+1. git clone %repo-url%
+2. cd %repo folder%
 3. git submodule init
 4. git submodule update
 
