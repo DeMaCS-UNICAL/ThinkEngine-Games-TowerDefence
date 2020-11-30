@@ -1,4 +1,4 @@
-# ThinkEngine-Games-YOURGAME
+# ThinkEngine-Games-TowerDefense
 
 To clone the repository:
 1. git clone %repo-url%
@@ -17,7 +17,5 @@ Contributors:
 
 
 
-Original project: 
-
-
+Original project: https://github.com/Brackeys/Tower-Defense-Tutorial
 
