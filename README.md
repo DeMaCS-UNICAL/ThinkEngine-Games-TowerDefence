@@ -19,5 +19,3 @@ Contributors:
 
 Original project: https://github.com/Brackeys/Tower-Defense-Tutorial
 
-
-
