@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -930550604, guid: acaf99db48d038241baa7e0fc48709d5, type: 3}
+  m_Name: SensorsManager
+  m_EditorClassIdentifier: 
+  confsToSerialize:
+  - {fileID: 11400000, guid: 8d2b4eba29d572c42bceb815edae998e, type: 2}
+  - {fileID: 11400000, guid: ae2a891081ed6f14c9c920a152451a90, type: 2}
+  - {fileID: 11400000, guid: 3eb416f2282ac3e43aeccb3dd0c0cfde, type: 2}
+  configuredGameObject:
+  - Sensors
+  - GameMaster
+  configurationsNames:
+  - Nodes
+  - Enemies
+  - Player
