@@ -94,7 +94,7 @@ public class FpsReport : MonoBehaviour
     private void Awake()
     {
         brainActive = brain.enabled && brain.enableBrain;
-        updateFrequency = (int) brain.sensorsUpdateFrequencyMS;
+        // updateFrequency = (int) brain.sensorsUpdateFrequencyMS;
         enemies = EnemySensorDataList.Instance;
         nodes = NodeSensorDataList.Instance;
         sceneName = SceneManager.GetActiveScene().name;
@@ -126,8 +126,8 @@ public class FpsReport : MonoBehaviour
             var separator = useAnotherSeparatorForCsv ? csvSeparator : defaultSeparator;
             UpdateText(csvPath, separator, updatingSensors);
         }
-        updatingSensors = Performance.updatingSensors;
-        Performance.updatingSensors = false;
+        updatingSensors = Utility.updatingSensors;
+        //Utility.updatingSensors = false;
     }
 
     private string CreateFile(string extension, Separator separator)

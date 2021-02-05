@@ -150,7 +150,7 @@ namespace LevelGenerator.Scripts
             bottomCanvasTransformPosition.z = -(rows + 1) * NodeDimension;
             bottomCanvas.transform.position = bottomCanvasTransformPosition;
 
-            GameObject.Find("Brain").GetComponent<Brain>().ASPFilePath = $"Assets/Resources/{newScene.name}.asp";
+            // GameObject.Find("Brain").GetComponent<Brain>().ASPFilePath = $"Assets/Resources/{newScene.name}.asp";
 
             return level;
         }
