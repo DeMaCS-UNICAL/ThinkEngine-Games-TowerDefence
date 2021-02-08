@@ -1,16 +1,44 @@
+%For runtime instantiated GameObject, only the prefab mapping is provided. Use that one substituting the gameobject name accordingly
+%enemySensors(enemySimple,objectIndex(X),enemySensorData(health(V))).
+%enemySensors(enemySimple,objectIndex(X),enemySensorData(type(V))).
+%enemySensors(enemySimple,objectIndex(X),enemySensorData(x(V))).
+%enemySensors(enemySimple,objectIndex(X),enemySensorData(y(V))).
+%nodeSensor(node1,objectIndex(X),nodeSensor(turretTypeName(V))).
+%nodeSensor(node1,objectIndex(X),nodeSensor(x(V))).
+%nodeSensor(node1,objectIndex(X),nodeSensor(y(V))).
+%player(gameMaster,objectIndex(X),playerStats(money(V))).
+%player(gameMaster,objectIndex(X),playerStats(lives(V))).
+
+
+
 % ===== Input Transforming ===== %
     enemy(ID, X, Y, Health, Type) :-
-        enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(health(Health)))))),
-        enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(type(Type)))))),
-        enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(x(X)))))),
-        enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(y(Y)))))).
+    
+        enemySensors(_,objectIndex(ID),enemySensorData(health(Health))),
+        enemySensors(_,objectIndex(ID),enemySensorData(type(Type))),
+        enemySensors(_,objectIndex(ID),enemySensorData(x(X))),
+        enemySensors(_,objectIndex(ID),enemySensorData(y(Y))).
+
+    
+        %enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(health(Health)))))),
+        %enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(type(Type)))))),
+        %enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(x(X)))))),
+        %enemies(sensors(sensorsDataListsManager(enemies(ID,enemySensorData(y(Y)))))).
 
     node(ID, X, Y, TurretType) :-
-        nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensorData(turretTypeName(TurretType)))))),
-        nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensorData(x(X)))))),
-        nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensorData(y(Y)))))).
+    
+        nodeSensor(_,objectIndex(ID),nodeSensor(turretTypeName(TurretType))),
+        nodeSensor(_,objectIndex(ID),nodeSensor(x(X))),
+        nodeSensor(_,objectIndex(ID),nodeSensor(y(Y))).
 
-    money(Value) :- player(gameMaster(playerStats(money(Value)))).
+    
+       % nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensor(turretTypeName(TurretType)))))),
+       % nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensor(x(X)))))),
+       % nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensor(y(Y)))))).
+
+    money(Value) :- player(gameMaster,objectIndex(X),playerStats(money(Value))).
+    
+    %player(gameMaster(playerStats(money(Value)))).
 
 % Do not build if there is no enemy
 :- #count{ID : enemy(ID, _, _, _, _)} = 0.
@@ -48,9 +76,11 @@ nodePositionCoefficient(NodeX, NodeY, Value) :-
 action(X, Y, Turret) | out(X, Y, Turret) :- build(X, Y, Turret).
 :- #count{X, Y, Turret : action(X, Y, Turret)} > 1.
 
-setOnActuator(actuator(brain(aI(x(X))))):- build(X, _, _).
-setOnActuator(actuator(brain(aI(y(Y))))):- build(_, Y, _).
-setOnActuator(actuator(brain(aI(turretTypeName(Turret))))):- build(_, _, Turret).
+
+setOnActuator(brainAct(brain,objectIndex(ID),aI(x(X)))):-objectIndex(brainAct,ID),build(X, _, _).
+setOnActuator(brainAct(brain,objectIndex(ID),aI(y(Y)))):-objectIndex(brainAct,ID),build(_, Y, _).
+setOnActuator(brainAct(brain,objectIndex(ID),aI(turretTypeName(T)))):-objectIndex(brainAct,ID),build(_, _, T).
+
 
 
 % Costs
