@@ -15,6 +15,9 @@ GameObject:
   - component: {fileID: 11483098}
   - component: {fileID: 114000011600303422}
   - component: {fileID: -2703922099607877821}
+  - component: {fileID: 5347570265163179932}
+  - component: {fileID: 6104857462302222703}
+  - component: {fileID: 8516560043726642910}
   m_Layer: 0
   m_Name: Enemy_Simple
   m_TagString: Enemy
@@ -109,13 +112,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e69892bf317855c4b83fc07ba19c4d36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startSpeed: 10
-  speed: 10
-  startHealth: 100
-  worth: 50
   deathEffect: {fileID: 1000010680075956, guid: ff75d2aaf6dbeef40a04ec1a235a7ca5,
     type: 3}
   healthBar: {fileID: 114000010702059108}
+  speed: 10
+  startHealth: 100
+  startSpeed: 10
+  worth: 50
 --- !u!114 &114000011600303422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -138,6 +141,122 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b62882fe71b5a1419695dc18a0b5e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  health: 0
+--- !u!114 &5347570265163179932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -508812344, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousGOName: Enemy_Simple
+  saved: 1
+  properties:
+  - myStrings:
+    - EnemySensorData
+    - health
+    Count: 2
+  - myStrings:
+    - EnemySensorData
+    - type
+    Count: 2
+  - myStrings:
+    - EnemySensorData
+    - X
+    Count: 2
+  - myStrings:
+    - EnemySensorData
+    - Y
+    Count: 2
+  propertiesNames: []
+  configurationName: enemySensors
+  advancedConf:
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  operationPerProperty:
+  - Key:
+      myStrings:
+      - EnemySensorData
+      - health
+      Count: 2
+    Value: 0
+  - Key:
+      myStrings:
+      - EnemySensorData
+      - type
+      Count: 2
+    Value: 0
+  - Key:
+      myStrings:
+      - EnemySensorData
+      - X
+      Count: 2
+    Value: 0
+  - Key:
+      myStrings:
+      - EnemySensorData
+      - Y
+      Count: 2
+    Value: 0
+  specificValuePerProperty: []
+--- !u!114 &6104857462302222703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1086532457, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentIndex: 3
+--- !u!114 &8516560043726642910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146912}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 417179157, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1000010410862480

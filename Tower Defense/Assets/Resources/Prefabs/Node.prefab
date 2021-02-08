@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 2371668}
   - component: {fileID: 114000010605076798}
   - component: {fileID: -329980225917016058}
+  - component: {fileID: 2750323341068621853}
+  - component: {fileID: 591017019123287825}
+  - component: {fileID: 812252756818893952}
   m_Layer: 8
   m_Name: Node
   m_TagString: Untagged
@@ -133,3 +136,99 @@ MonoBehaviour:
   y: 0
   turretType: 0
   turretTypeName: 
+--- !u!114 &2750323341068621853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1086532457, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentIndex: 86
+--- !u!114 &591017019123287825
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -508812344, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  previousGOName: Node
+  saved: 1
+  properties:
+  - myStrings:
+    - NodeSensorData
+    - turretTypeName
+    Count: 2
+  - myStrings:
+    - NodeSensorData
+    - X
+    Count: 2
+  - myStrings:
+    - NodeSensorData
+    - Y
+    Count: 2
+  propertiesNames: []
+  configurationName: nodeSensor
+  advancedConf:
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  - objType: 
+    toSave: []
+    propertyName:
+      myStrings: []
+      Count: 0
+    name: 
+    propertyType: 
+  operationPerProperty:
+  - Key:
+      myStrings:
+      - NodeSensorData
+      - turretTypeName
+      Count: 2
+    Value: 0
+  - Key:
+      myStrings:
+      - NodeSensorData
+      - X
+      Count: 2
+    Value: 0
+  - Key:
+      myStrings:
+      - NodeSensorData
+      - Y
+      Count: 2
+    Value: 0
+  specificValuePerProperty: []
+--- !u!114 &812252756818893952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 197144}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 417179157, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

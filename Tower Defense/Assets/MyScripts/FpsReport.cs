@@ -92,7 +92,7 @@ public class FpsReport : MonoBehaviour
 
     private void Awake()
     {
-        brainActive = brain.enabled && brain.enableBrain;
+        //brainActive = brain.enabled && brain.enableBrain;
         enemies = EnemySensorDataList.Instance;
         nodes = NodeSensorDataList.Instance;
         sceneName = SceneManager.GetActiveScene().name;

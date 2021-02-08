@@ -11,7 +11,7 @@ public class EnemySensorData : SensorData
     [ReadOnly] [SerializeField]
     private int health;
     
-    private string type;
+    private string type="";
     
     private new void Awake()
     {

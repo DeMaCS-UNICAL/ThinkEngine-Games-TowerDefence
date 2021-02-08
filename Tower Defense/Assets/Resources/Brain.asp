@@ -27,9 +27,9 @@
 
     node(ID, X, Y, TurretType) :-
     
-        nodeSensor(_,objectIndex(ID),nodeSensor(turretTypeName(TurretType))),
-        nodeSensor(_,objectIndex(ID),nodeSensor(x(X))),
-        nodeSensor(_,objectIndex(ID),nodeSensor(y(Y))).
+        nodeSensor(_,objectIndex(ID),nodeSensorData(turretTypeName(TurretType))),
+        nodeSensor(_,objectIndex(ID),nodeSensorData(x(X))),
+        nodeSensor(_,objectIndex(ID),nodeSensorData(y(Y))).
 
     
        % nodes(sensors(sensorsDataListsManager(nodes(ID,nodeSensor(turretTypeName(TurretType)))))),
