@@ -1,4 +1,5 @@
-﻿using UnityEditor;
+﻿#if UNITY_EDITOR
+using UnityEditor;
 using UnityEngine;
 
 namespace Utils.CustomAttributes.ReadOnlyWhenPlaying
@@ -21,3 +22,4 @@ namespace Utils.CustomAttributes.ReadOnlyWhenPlaying
         }
     }
 }
+#endif
