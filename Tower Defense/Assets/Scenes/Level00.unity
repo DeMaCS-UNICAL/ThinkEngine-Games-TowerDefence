@@ -737,7 +737,7 @@ MonoBehaviour:
   m_Script: {fileID: 1086532457, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: 173
+  currentIndex: 88
 --- !u!1 &111591002
 GameObject:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &169131331
 PrefabInstance:
@@ -1310,7 +1310,7 @@ MonoBehaviour:
   m_Script: {fileID: 1086532457, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: 174
+  currentIndex: 93
 --- !u!1001 &202191953
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4942,7 +4942,7 @@ GameObject:
   - component: {fileID: 788061215}
   - component: {fileID: 788061214}
   m_Layer: 0
-  m_Name: Brain
+  m_Name: Level00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4966,12 +4966,11 @@ MonoBehaviour:
   _chosenSensorConfigurations:
   - player
   - nodeSensor
-  - enemySensors
   _chosenActuatorConfigurations:
   - brainAct
-  ASPFilesPath: .\Assets\Resources\
-  ASPFilesPrefix: Brain
-  _ASPFileTemplatePath: .\Assets\Resources\TemplateBrain.asp
+  ASPFilesPath: .\Assets\StreamingAssets\
+  ASPFilesPrefix: Level00
+  _ASPFileTemplatePath: .\Assets\Resources\TemplateLevel00.asp
   _executeReasonerOn: When Sensors are ready
   prefabBrain: 0
   specificASPFile: 0
@@ -5000,7 +4999,7 @@ MonoBehaviour:
   m_Script: {fileID: 1086532457, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentIndex: 175
+  currentIndex: 114
 --- !u!114 &788061217
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5013,7 +5012,7 @@ MonoBehaviour:
   m_Script: {fileID: -928785524, guid: 4753b2ec08f657f448b444dcc684bdd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  previousGOName: Brain
+  previousGOName: Level00
   saved: 1
   properties:
   - myStrings:
@@ -5441,7 +5440,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &909198893
 PrefabInstance:
@@ -6850,51 +6849,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1056861233}
   m_CullTransparentMesh: 0
---- !u!1 &1060836204
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1060836205}
-  - component: {fileID: 1060836207}
-  m_Layer: 0
-  m_Name: Sensors
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1060836205
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060836204}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 17
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1060836207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1060836204}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 58b32ffd7ce3465ebb13976579809475, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemies: []
-  nodes: []
 --- !u!1001 &1073861516
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7789,7 +7743,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1207057981
 PrefabInstance:
@@ -9354,7 +9308,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 22451668, guid: 0abab5bb77339e4428787a870eb31bd3, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -10208,7 +10162,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1471803075
 PrefabInstance:
@@ -14164,7 +14118,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2124664757
 PrefabInstance:
