@@ -1,5 +1,7 @@
 # ThinkEngine-Games-TowerDefense
 
+A simple Tower Defense game developed using the ThinkEngine (https://github.com/DeMaCS-UNICAL/ThinkEngine) and featuring some framerate benchmarking capability.
+
 To clone the repository:
 1. git clone %repo-url%
 2. cd %repo folder%
