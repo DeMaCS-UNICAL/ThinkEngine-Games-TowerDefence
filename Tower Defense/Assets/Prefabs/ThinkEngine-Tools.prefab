@@ -1,0 +1,596 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &718940731733582827
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2262883953436151374}
+  - component: {fileID: 4348865838050160491}
+  - component: {fileID: 1732497023272300972}
+  - component: {fileID: 6923897161187049558}
+  - component: {fileID: 7038740632163442823}
+  - component: {fileID: 3641665344165596193}
+  - component: {fileID: 1830484607286368894}
+  m_Layer: 0
+  m_Name: Brain
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2262883953436151374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6948918424366674046}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4348865838050160491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 357554835, guid: acaf99db48d038241baa7e0fc48709d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enableBrain: 1
+  debug: 0
+  maintainFactFile: 0
+  sensorsConfigurations:
+  - {fileID: 11400000, guid: ae2a891081ed6f14c9c920a152451a90, type: 2}
+  - {fileID: 11400000, guid: 8d2b4eba29d572c42bceb815edae998e, type: 2}
+  - {fileID: 11400000, guid: 3eb416f2282ac3e43aeccb3dd0c0cfde, type: 2}
+  actuatorsConfigurations:
+  - {fileID: 11400000, guid: 8d50b486d54e71f4d9a279efb8549f9b, type: 2}
+  ASPFilePath: .\Assets\Resources\Level00.asp
+  ASPFileTemplatePath: .\Assets\Resources\Brain_template.asp
+  triggerClassPath: .\Assets\Scripts\Trigger.cs
+  updateSensorsRepeteadly: 1
+  sensorsUpdateFrequencyMS: 100
+  updateSensorsOnTrigger: 0
+  updateSensorsOn: 
+  executeReasonerOn: When Sensors are ready
+  applyActuatorsCondition: Always
+--- !u!114 &1732497023272300972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 904c34c3b0094204c894d196a4566356, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  x: 0
+  y: 0
+  turretTypeName: -1
+--- !u!114 &6923897161187049558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1277370436, guid: acaf99db48d038241baa7e0fc48709d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gOConfigurations: []
+  localNames: []
+  goName: Brain
+--- !u!114 &7038740632163442823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1947222007, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ThinkEngine.dll::ThinkEngine.MonoBehaviourActuatorsManager
+--- !u!114 &3641665344165596193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1985704856, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ThinkEngine.dll::ThinkEngine.ActuatorConfiguration
+  _savedProperties:
+  - myStrings:
+    - AI
+    Count: 1
+  - myStrings:
+    - AI
+    - X
+    Count: 2
+  - myStrings:
+    - AI
+    - Y
+    Count: 2
+  - myStrings:
+    - AI
+    - TurretTypeName
+    Count: 2
+  _toMapProperties:
+  - myStrings:
+    - AI
+    - X
+    Count: 2
+  - myStrings:
+    - AI
+    - Y
+    Count: 2
+  - myStrings:
+    - AI
+    - TurretTypeName
+    Count: 2
+  _propertyFeatures:
+  - property:
+      myStrings:
+      - AI
+      - X
+      Count: 2
+    windowWidth: 1
+    configurationName: actuator
+    _propertyAlias: actuator_X
+    propertyAliasHash: 1754731490
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - AI
+      - Y
+      Count: 2
+    windowWidth: 1
+    configurationName: actuator
+    _propertyAlias: actuator_Y
+    propertyAliasHash: 188647549
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - AI
+      - TurretTypeName
+      Count: 2
+    windowWidth: 1
+    configurationName: actuator
+    _propertyAlias: actuator_TurretTypeName
+    propertyAliasHash: -2017336769
+    operation: 0
+    specificValue: 
+    counter: 0
+  _configurationName: actuator
+  _methodToApply: Always
+--- !u!114 &1830484607286368894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718940731733582827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -626081490, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ThinkEngine.dll::ThinkEngine.ReactiveBrain
+  borning: 0
+  enableBrain: 1
+  debug: 1
+  maintainInputFile: 0
+  _chosenSensorConfigurations:
+  - enemy
+  - nodes
+  AIFilesPath: C:/Users/pierp/Desktop/Prova2/ThinkEngine-Games-TowerDefence/Tower
+    Defense/Assets/StreamingAssets\ThinkEngineer\ThinkEngine
+  AIFilesPrefix:
+  - Level00
+  prefabBrain: 0
+  solverEnum: 1
+  _executeReasonerOn: When Sensors are ready
+  specificAIFile: 0
+  globalAIFile: 0
+  solver_options: []
+  _chosenActuatorConfigurations:
+  - actuator
+--- !u!1 &1011137274073597141
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4900039326780321328}
+  - component: {fileID: 3338541975224221135}
+  - component: {fileID: 3729264722374468647}
+  - component: {fileID: 2543115733339726314}
+  - component: {fileID: 3388181279785423543}
+  - component: {fileID: 4949827930615091082}
+  m_Layer: 0
+  m_Name: Sensors
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4900039326780321328
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137274073597141}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6948918424366674046}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3338541975224221135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137274073597141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 58b32ffd7ce3465ebb13976579809475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemies: []
+  nodes: []
+--- !u!114 &3729264722374468647
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137274073597141}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1560303995, guid: acaf99db48d038241baa7e0fc48709d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gOConfigurations: []
+  localNames: []
+  goName: Sensors
+--- !u!114 &2543115733339726314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137274073597141}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1560303995, guid: acaf99db48d038241baa7e0fc48709d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gOConfigurations: []
+  localNames: []
+  goName: Sensors
+--- !u!114 &3388181279785423543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137274073597141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1612528518, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ThinkEngine.dll::ThinkEngine.SensorConfiguration
+  _savedProperties:
+  - myStrings:
+    - SensorsDataListsManager
+    Count: 1
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    Count: 2
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    - NodeSensorData
+    - TurretTypeName
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    - NodeSensorData
+    - X
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    - NodeSensorData
+    - Y
+    Count: 4
+  _toMapProperties:
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    - NodeSensorData
+    - TurretTypeName
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    - NodeSensorData
+    - X
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Nodes
+    - NodeSensorData
+    - Y
+    Count: 4
+  _propertyFeatures:
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Nodes
+      - NodeSensorData
+      - TurretTypeName
+      Count: 4
+    windowWidth: 1
+    configurationName: nodes
+    _propertyAlias: nodes_TurretTypeName
+    propertyAliasHash: 405404959
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Nodes
+      - NodeSensorData
+      - X
+      Count: 4
+    windowWidth: 1
+    configurationName: nodes
+    _propertyAlias: nodes_X
+    propertyAliasHash: 1440869332
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Nodes
+      - NodeSensorData
+      - Y
+      Count: 4
+    windowWidth: 1
+    configurationName: nodes
+    _propertyAlias: nodes_Y
+    propertyAliasHash: 1440869333
+    operation: 0
+    specificValue: 
+    counter: 0
+  _configurationName: nodes
+  isInvariant: 0
+  isFixedSize: 0
+  _serializableSensorsTypes:
+  - typeName: ThinkEngine.nodes_TurretTypeName, Assembly-CSharp, Version=0.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+  - typeName: ThinkEngine.nodes_X, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - typeName: ThinkEngine.nodes_Y, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  recompile: 0
+  teRecompile: 0
+  generatedScripts:
+  - nodes_TurretTypeName.cs
+  - nodes_X.cs
+  - nodes_Y.cs
+--- !u!114 &4949827930615091082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1011137274073597141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1612528518, guid: 06783fc4099d1e04ba318698c43e592c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: ThinkEngine.dll::ThinkEngine.SensorConfiguration
+  _savedProperties:
+  - myStrings:
+    - SensorsDataListsManager
+    Count: 1
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    Count: 2
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - Health
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - Type
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - X
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - Y
+    Count: 4
+  _toMapProperties:
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - Health
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - Type
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - X
+    Count: 4
+  - myStrings:
+    - SensorsDataListsManager
+    - Enemies
+    - EnemySensorData
+    - Y
+    Count: 4
+  _propertyFeatures:
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Enemies
+      - EnemySensorData
+      - Health
+      Count: 4
+    windowWidth: 1
+    configurationName: enemy
+    _propertyAlias: enemy_Health
+    propertyAliasHash: 1298145977
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Enemies
+      - EnemySensorData
+      - Type
+      Count: 4
+    windowWidth: 1
+    configurationName: enemy
+    _propertyAlias: enemy_Type
+    propertyAliasHash: -1226075023
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Enemies
+      - EnemySensorData
+      - X
+      Count: 4
+    windowWidth: 1
+    configurationName: enemy
+    _propertyAlias: enemy_X
+    propertyAliasHash: 962697217
+    operation: 0
+    specificValue: 
+    counter: 0
+  - property:
+      myStrings:
+      - SensorsDataListsManager
+      - Enemies
+      - EnemySensorData
+      - Y
+      Count: 4
+    windowWidth: 1
+    configurationName: enemy
+    _propertyAlias: enemy_Y
+    propertyAliasHash: 962697218
+    operation: 0
+    specificValue: 
+    counter: 0
+  _configurationName: enemy
+  isInvariant: 0
+  isFixedSize: 0
+  _serializableSensorsTypes:
+  - typeName: ThinkEngine.enemy_Health, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - typeName: ThinkEngine.enemy_Type, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - typeName: ThinkEngine.enemy_X, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  - typeName: ThinkEngine.enemy_Y, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  recompile: 0
+  teRecompile: 0
+  generatedScripts:
+  - enemy_Health.cs
+  - enemy_Type.cs
+  - enemy_X.cs
+  - enemy_Y.cs
+--- !u!1 &2925911445477080294
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6948918424366674046}
+  m_Layer: 0
+  m_Name: ThinkEngine-Tools
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6948918424366674046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925911445477080294}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4900039326780321328}
+  - {fileID: 2262883953436151374}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
